@@ -1,5 +1,6 @@
 package com.example.mentorsystembackend.controller;
 
+import com.example.mentorsystembackend.model.mentor;
 import com.example.mentorsystembackend.repository.MentorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +17,7 @@ public class MentorController {
     //get all mentor
 
     @GetMapping("/mentor")
-    public List<MentorRepository>getAllMentor(){
+    public List<mentor> getAllMentor(){
         return mentorRepository.findAll();
     }
 
