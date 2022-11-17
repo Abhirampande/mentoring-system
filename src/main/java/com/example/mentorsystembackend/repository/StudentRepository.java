@@ -4,5 +4,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import com.example.mentorsystembackend.model.student;
 @Repository
-public interface studentRepository extends JpaRepository <student, Long>{
+public interface StudentRepository extends JpaRepository <student, Long>{
 }
