@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name ="mentor")
-public class mentor {
+public class Mentor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -15,9 +15,9 @@ public class mentor {
     @Column(name ="email_id")
     private String emailId;
 
-    public mentor() {
+    public Mentor() {
     }
-    public mentor(String firstName, String lastName, String emailId){
+    public Mentor(String firstName, String lastName, String emailId){
         super();
         this.firstName=firstName;
         this.lastName=lastName;

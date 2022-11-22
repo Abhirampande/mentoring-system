@@ -1,6 +1,6 @@
 package com.example.mentorsystembackend.controller;
 
-import com.example.mentorsystembackend.model.student;
+import com.example.mentorsystembackend.model.Student;
 import com.example.mentorsystembackend.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +15,7 @@ public class StudentController {
     private StudentRepository studentRepository;
 // get all students
     @GetMapping(path = "/")
-    public List<student> getAllStudent(){
+    public List<Student> getAllStudent(){
        return studentRepository.findAll();
     }
 }
